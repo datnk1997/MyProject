@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2017 6:41:19 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="Model.Product" table="Product" schema="dbo" catalog="Mobilezz">
+		<id name="Pid" type="int">
+			<column name="Pid">  
+			</column>
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="categories" class="Model.Categories"  >
+ 		<column name="Cid" />
+ 		</many-to-one>
+		
+		
+		<property name="Pname" type="java.lang.String">
+			<column name="Pname" length="50" />
+		</property>
+		<property name="Note" type="java.lang.String">
+			<column name="Note" length="50" />
+		</property>
+		<property name="picture" type="java.lang.String">
+			<column name="Piture" length="50" />
+		</property>
+		<property name="Price" type="int">
+			<column name="Price"  />
+		</property>
+		<property name="Manhinh" type="java.lang.String">
+			<column name="Manhinh" length="50" />
+		</property>
+		<property name="CPU" type="java.lang.String">
+			<column name="CPU" length="50" />
+		</property>
+		<property name="Hedieuhanh" type="java.lang.String">
+			<column name="Hedieuhanh" length="50" />
+		</property>
+		<property name="Ram" type="java.lang.String">
+			<column name="Ram" length="50" />
+		</property>
+		<property name="Bonhotrong" type="java.lang.String">
+			<column name="Bonhotrong" length="50" />
+		</property>
+		
+
+	</class>
+
+</hibernate-mapping>

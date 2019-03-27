@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2017 6:41:19 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="Model.Categories" table="Categories" schema="dbo" catalog="Mobilezz">
+		<id name="Cid" type="int">
+			<column name="Cid">  
+			</column>
+			<generator class="native" />
+		</id>
+		<property name="Cname" type="java.lang.String">
+			<column name="Cname" length="50" />
+		</property>
+		
+
+	</class>
+
+</hibernate-mapping>
